@@ -14,43 +14,44 @@
 </head>
 <body>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-    <fieldset>
-      <legend>Personal information:</legend>
-      <label for="surname">Surname:</label> <input type="text" name="surname" id="surname" autocomplete="off" required><br><br>
-      <label for="name">Name:</label>  <input type="text" name="name" id="name" autocomplete="off" required><br><br>
-      <label for="age">How old are You</label> <input type="number" name="age" value="12" data-qa="field-value" id="age"><br><br>
-      <label for="date">Full date of birth</label> <input type="date" name="bday" id="date"><br><br>
-      <label for="compliance">I accept the term of the agreement</label> <input type="checkbox" name="agreement" id="compliance"><br><br>
-      </fieldset><br>
-      <fieldset>
-        <legend>Registration</legend>
-        <label for="email">E-mail:</label> <input type="email" name="email" placeholder="email@example.com" id="email" data-qa="field-placeholder"><br><br>
-        <label for="psw">Password:</label><input type="password" name="psw" id="psw"  minlength="7"><br>
-        </fieldset><br>
+  <fieldset>
+      <legend>Personal information</legend>
+      <label for="surname">Surname:</label> <input type="text" name="surname" id="surname" autocomplete="off" class="first" required><br>
+      <label for="name">Name:</label>  <input type="text" name="name" id="name" autocomplete="off" required><br>
+      <label for="age">How old are You?</label> <input type="number" name="quantity" value="12" id="age" data-qa="field-value" min="12" max="99"><br>
+      <label for="date">Full date of birth:</label> <input type="date" name="bday" id="date"><br>
+      <label for="compliance">I accept the term of the agreement</label> <input type="checkbox" name="agreement" id="compliance">
+  </fieldset>
 
-        <fieldset>
+    <fieldset>
+        <legend>Registration</legend>
+        <label for="email">E-mail:</label> <input type="email" name="email" placeholder="email@example.com" id="email" data-qa="field-placeholder"><br>
+        <label for="psw">Password:</label><input type="password" name="psw" id="psw"  minlength="7"><br>
+    </fieldset>
+
+    <fieldset>
           <legend>An interesting fact about you!</legend>
-          <label for="cats">Do you love cats? </label><input type="radio" name="cats" value="yes" id="cats">Yes<input type="radio" name="cats" value="no">No<br><br>
+          <label for="cats">Do you love cats? </label><input type="radio" name="cats" value="yes" id="cats">Yes<input type="radio" name="cats" value="no">No<br>
           <label for="col">What is your favourite color? </label> <input type="color" name="favcolor" id="col"><br>
-          <label for="time">What time do you go to bed? </label><input type="time" name="usr_time" id="time"><br><br>
+          <label for="time">What time do you go to bed? </label><input type="time" name="usr_time" id="time"><br>
           <label for="brand">What are your favourite brand of cars? </label><select name="cars" size="4" id="brand" multiple>
           <option value="volvo">BMW</option>
           <option value="saab">Audi</option>
           <option value="fiat">Lada</option>
-          </select><br><br>
+          </select><br>
           How do you rate our work?<input type="range" value="0" name="points" min="0" max="10">
-          </fieldset><br>
+    </fieldset>
 
-          <fieldset>
+    <fieldset>
             <legend>Additional info</legend>
-            <label for="com">Comments: </label> <textarea rows="3" cols="20" name="comment" form="usrform" id="com"  maxlength="20"></textarea><br><br>
-            <label for="rec">Would you recommend us? </label><select name="answer" id="rec">
+            <label for="com">Comments: </label> <textarea rows="3" cols="20" name="comment" form="usrform" id="com"  maxlength="20"></textarea><br>
+            <label for="rec">Would you recommend us? </label>
+            <select name="answer" id="rec">
             <option value="yes">Yes</option>
             <option value="no">No</option>
+            </select>
 
-          </select>
-
-            </fieldset><br>
+    </fieldset>
             <input type="submit" value="Submit">
 
   </form>

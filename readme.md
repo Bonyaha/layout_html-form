@@ -52,5 +52,5 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 
 **Result**
 
-- [UPDATE DEMO LINK](/)
-- [UPDATE TEST REPORT LINK](/report/html_report/)
+- [UPDATE DEMO LINK](https://bonyaha.github.io/layout_html-form/)
+- [UPDATE TEST REPORT LINK](https://bonyaha.github.io/layout_html-form//report/html_report/)

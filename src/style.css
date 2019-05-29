@@ -1,8 +1,13 @@
 fieldset {
   margin-bottom: 20px;
-  padding-bottom: 0;
+
+}
+
+label {
+  display: block;
 }
 
 input {
   margin-bottom: 10px;
+
 }
